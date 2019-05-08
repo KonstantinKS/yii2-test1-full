@@ -18,7 +18,8 @@
         "yiisoft/yii2": "~2.0.14",
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
-        "konstantinks/yii2-test1": "dev-master"
+        "konstantinks/yii2-test1": "dev-master",
+        "demliz/render-rsl": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
@@ -72,7 +73,7 @@
         },
         {
             "type": "path",
-            "url": "demliz-org/render-rsl"
+            "url": "demliz/render-rsl"
         }
 
     ]

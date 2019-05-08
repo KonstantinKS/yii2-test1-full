@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f27276cce7019ddda4a38fa5f96b8306",
+    "content-hash": "77907332393cacc0a1b90f48c014f48f",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -53,7 +53,7 @@
             "version": "3.3.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:jquery/jquery-dist.git",
+                "url": "https://github.com/jquery/jquery-dist.git",
                 "reference": "9e8ec3d10fad04748176144f108d7355662ae75e"
             },
             "dist": {
@@ -161,6 +161,35 @@
                 "markdown-extra"
             ],
             "time": "2018-03-26T11:24:36+00:00"
+        },
+        {
+            "name": "demliz/render-rsl",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "demliz/render-rsl",
+                "reference": "332b0737fd09eeecbca47e10f111b357290da999"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Demliz\\RenderRsl\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Konstantin Karpov",
+                    "email": "k-karpov@demliz.com",
+                    "homepage": "https://github.com/demliz-org/render-rsl",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Render of documents from the library rsl for Demliz company.",
+            "keywords": [
+                "demliz",
+                "render",
+                "rsl"
+            ]
         },
         {
             "name": "doctrine/lexer",
@@ -3585,7 +3614,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "konstantinks/yii2-test1": 20
+        "konstantinks/yii2-test1": 20,
+        "demliz/render-rsl": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

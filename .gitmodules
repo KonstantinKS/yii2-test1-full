@@ -1,0 +1,6 @@
+[submodule "demliz/render-rsl"]
+	path = demliz/render-rsl
+	url = git@github.com:demliz-org/render-rsl.git
+[submodule "konstantinks/yii2-test1"]
+	path = konstantinks/yii2-test1
+	url = git@github.com:KonstantinKS/yii2-test1.git

@@ -1,0 +1,21 @@
+<?php
+
+declare(strict_types=1);
+
+use PhpCsFixer\Finder;
+
+use Demliz\PhpCsConfig\{
+    Factory,
+    RuleSet
+};
+
+$finder = Finder::create()
+    ->in(__DIR__)
+    ->exclude(['runtime', 'web/assets'])
+    ->notPath('requirements.php');
+
+$config = Factory::fromRuleSet(new RuleSet())
+    ->setFinder($finder)
+    ->setCacheFile(__DIR__ . '/.php_cs.cache');
+
+return $config;

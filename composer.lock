@@ -360,7 +360,7 @@
             "dist": {
                 "type": "path",
                 "url": "konstantinks/yii2-test1",
-                "reference": "cb29c32459ad3411421276801a11ac72c21c7c36"
+                "reference": "796cad53e0c80a8bffc41c58ad250fa93f9a8aaa"
             },
             "require": {
                 "yiisoft/yii2": "~2.0.0"

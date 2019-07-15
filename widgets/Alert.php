@@ -1,4 +1,5 @@
 <?php
+
 namespace app\widgets;
 
 use Yii;
@@ -31,11 +32,11 @@ class Alert extends \yii\bootstrap\Widget
      * - value: the bootstrap alert type (i.e. danger, success, info, warning)
      */
     public $alertTypes = [
-        'error'   => 'alert-danger',
-        'danger'  => 'alert-danger',
+        'error' => 'alert-danger',
+        'danger' => 'alert-danger',
         'success' => 'alert-success',
-        'info'    => 'alert-info',
-        'warning' => 'alert-warning'
+        'info' => 'alert-info',
+        'warning' => 'alert-warning',
     ];
     /**
      * @var array the options for rendering the close button tag.
@@ -43,11 +44,10 @@ class Alert extends \yii\bootstrap\Widget
      */
     public $closeButton = [];
 
-
     /**
      * {@inheritdoc}
      */
-    public function run()
+    public function run(): void
     {
         $session = Yii::$app->session;
         $flashes = $session->getAllFlashes();

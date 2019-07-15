@@ -13,9 +13,9 @@ class ContactFormTest extends \Codeception\Test\Unit
      */
     public $tester;
 
-    public function testEmailIsSentOnContact()
+    public function testEmailIsSentOnContact(): void
     {
-        /** @var ContactForm $model */
+        /* @var ContactForm $model */
         $this->model = $this->getMockBuilder('app\models\ContactForm')
             ->setMethods(['validate'])
             ->getMock();

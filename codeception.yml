@@ -1,4 +1,7 @@
 actor: Tester
+include:
+    - vendor/konstantinks/yii2-test1
+    - vendor/demliz/render-api-wrapper
 paths:
     tests: tests
     log: tests/_output

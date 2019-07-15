@@ -19,15 +19,12 @@
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
         "konstantinks/yii2-test1": "dev-master",
-        "demliz/render-api-wrapper": "dev-kks-rendering-of-rsl-documents-24464140"
+        "demliz/render-api-wrapper": "dev-kks-create-wrapper-for-render-rsl-24464140"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
         "yiisoft/yii2-gii": "~2.1.0",
         "yiisoft/yii2-faker": "~2.0.0",
-        "codeception/base": "~2.3.0",
-        "codeception/verify": "~0.4.0",
-        "codeception/specify": "~0.4.6",
         "symfony/browser-kit": ">=2.7 <=4.2.4",
         "codeception/codeception": "^2.4",
         "demliz/php-cs-rules": "^1.0"

@@ -18,8 +18,8 @@
         "yiisoft/yii2": "~2.0.14",
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
-        "konstantinks/yii2-test1": "dev-master",
-        "demliz/render-api-wrapper": "dev-kks-create-wrapper-for-render-rsl-24464140"
+        "konstantinks/yii2-module-test-first": "dev-master",
+        "demliz/render-api-wrapper": "dev-kks-create-wrapper-for-render-rsl-24464140 || dev-2d34b35b54434ab08d06da8c81d6942715480c42"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
@@ -70,11 +70,11 @@
         },
         {
             "type": "path",
-            "url": "konstantinks/yii2-test1"
+            "url": "demliz/render-api-wrapper"
         },
         {
             "type": "path",
-            "url": "demliz/render-api-wrapper"
+            "url": "konstantinks/module-test-first"
         },
         {
             "type": "vcs",

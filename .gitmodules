@@ -1,6 +1,6 @@
-[submodule "konstantinks/yii2-test1"]
-	path = konstantinks/yii2-test1
-	url = git@github.com:KonstantinKS/yii2-test1.git
 [submodule "demliz/render-api-wrapper"]
 	path = demliz/render-api-wrapper
 	url = git@github.com:demliz-org/render-api-wrapper.git
+[submodule "konstantinks/module-test-first"]
+	path = konstantinks/module-test-first
+	url = git@github.com:KonstantinKS/yii2-module-test-first.git

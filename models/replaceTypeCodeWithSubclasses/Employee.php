@@ -49,5 +49,5 @@ abstract class Employee
     /**
      * @return string
      */
-    abstract public function getJobType(): string ;
+    abstract public function getJobType(): string;
 }

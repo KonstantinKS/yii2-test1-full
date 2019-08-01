@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace app\models\replaceTypeCodeWithClass;
 
-use Yii;
-
 /**
  * Class BloodGroup
  *
@@ -28,7 +26,7 @@ class BloodGroup
     ];
 
     /**
-     * @var int|null $bloodGroup
+     * @var int|null
      */
     private $bloodGroup;
 
@@ -45,7 +43,7 @@ class BloodGroup
     /**
      * @return BloodGroup
      */
-    public static function new(): BloodGroup
+    public static function new(): self
     {
         return new self(null);
     }
@@ -53,7 +51,7 @@ class BloodGroup
     /**
      * @return BloodGroup
      */
-    public static function O(): BloodGroup
+    public static function O(): self
     {
         return new self(1);
     }
@@ -61,7 +59,7 @@ class BloodGroup
     /**
      * @return BloodGroup
      */
-    public static function A(): BloodGroup
+    public static function A(): self
     {
         return new self(2);
     }
@@ -69,7 +67,7 @@ class BloodGroup
     /**
      * @return BloodGroup
      */
-    public static function B(): BloodGroup
+    public static function B(): self
     {
         return new self(3);
     }
@@ -77,7 +75,7 @@ class BloodGroup
     /**
      * @return BloodGroup
      */
-    public static function AB(): BloodGroup
+    public static function AB(): self
     {
         return new self(4);
     }

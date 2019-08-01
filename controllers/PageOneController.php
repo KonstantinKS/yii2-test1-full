@@ -56,10 +56,11 @@ class PageOneController extends Controller
         var_dump($person2->getBloodTypeDesignation());
         print_r($person2);
         die;
+
         return $this->render('index');
     }
 
-    public function actionEmployee()
+    public function actionEmployee(): void
     {
         $employee = Employee::newEmployee(Employee::JOB_TYPE_ENGINEER);
         print_r($employee);

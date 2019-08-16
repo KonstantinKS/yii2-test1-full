@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace app\controllers;
 
+use app\models\factoryMethod\DialogInterface;
+use app\models\factoryMethod\WebDialog;
+use app\models\factoryMethod\WindowsDialog;
 use app\models\replaceTypeCodeWithClass\BloodGroup;
 use app\models\replaceTypeCodeWithClass\Person;
 use app\models\replaceTypeCodeWithSubclasses\Employee;
@@ -69,5 +72,24 @@ class PageOneController extends Controller
         $employee = Employee::newEmployee();
         print_r($employee);
         var_dump($employee->getJobType());
+    }
+
+    public function actionDialog(): void
+    {
+        $dialog = $this->initializeDialog(1);
+        $dialog->render(null, 'red');
+        $dialog = $this->initializeDialog(2);
+        $dialog->render();
+    }
+
+    private function initializeDialog(int $id): DialogInterface
+    {
+        switch ($id) {
+            case 1:
+                return new WindowsDialog();
+            case 2:
+            default:
+                return new WebDialog();
+        }
     }
 }

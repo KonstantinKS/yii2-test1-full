@@ -29,13 +29,11 @@ class LinkedInConnector implements SocialNetworkConnectorInterface
         $this->password = $password;
     }
 
-
     public function logIn(): void
     {
         echo "Send HTTP API request to log in user $this->email with " .
             "password $this->password\n";
     }
-
 
     public function logOut(): void
     {

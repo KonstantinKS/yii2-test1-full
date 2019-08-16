@@ -38,13 +38,11 @@ class Application
         $this->factory = $factory;
     }
 
-
     public function createUI(): void
     {
         $this->button = $this->factory->createButton();
         $this->checkbox = $this->factory->createCheckbox();
     }
-
 
     public function paint(): void
     {

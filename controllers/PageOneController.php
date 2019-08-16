@@ -9,7 +9,9 @@ use app\models\factoryMethod\WebDialog;
 use app\models\factoryMethod\WindowsDialog;
 use app\models\replaceTypeCodeWithClass\BloodGroup;
 use app\models\replaceTypeCodeWithClass\Person;
+use app\models\replaceTypeCodeWithStateStrategy\Employee as EmployeeAlias;
 use app\models\replaceTypeCodeWithSubclasses\Employee;
+use Yii;
 use yii\web\Controller;
 
 /**
@@ -91,5 +93,14 @@ class PageOneController extends Controller
             default:
                 return new WebDialog();
         }
+    }
+
+    public function actionStateStrategy(): void
+    {
+        $employee = new EmployeeAlias();
+        print_r($employee->getJobType());
+        $jobType = (string) Yii::$app->request->get('jobType');
+        $employee->setJobType($jobType);
+        print_r($employee->getJobType());
     }
 }

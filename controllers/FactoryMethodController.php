@@ -39,7 +39,6 @@ class FactoryMethodController extends Controller
         ];
     }
 
-
     public function actionConceptual(): void
     {
         /*
@@ -67,7 +66,6 @@ class FactoryMethodController extends Controller
             . $creator->someOperation();
         // ...
     }
-
 
     public function actionRealWorld(): void
     {

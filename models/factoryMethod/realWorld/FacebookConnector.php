@@ -29,13 +29,11 @@ class FacebookConnector implements SocialNetworkConnectorInterface
         $this->password = $password;
     }
 
-
     public function logIn(): void
     {
         echo "Send HTTP API request to log in user $this->login with " .
             "password $this->password\n";
     }
-
 
     public function logOut(): void
     {

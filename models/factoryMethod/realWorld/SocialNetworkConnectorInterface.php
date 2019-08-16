@@ -13,7 +13,6 @@ interface SocialNetworkConnectorInterface
 {
     public function logIn(): void;
 
-
     public function logOut(): void;
 
     /**

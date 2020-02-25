@@ -14,7 +14,6 @@ interface DialogInterface
     /**
      * @param string|null $text
      * @param string|null $color
-     * @return string
      */
     public function render(string $text = null, string $color = null): void;
 

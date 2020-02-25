@@ -4,3 +4,6 @@
 [submodule "konstantinks/module-test-first"]
 	path = konstantinks/module-test-first
 	url = git@github.com:KonstantinKS/yii2-module-test-first.git
+[submodule "demliz/document-identifier"]
+	path = demliz/document-identifier
+	url = git@github.com:demliz-org/document-identifier.git

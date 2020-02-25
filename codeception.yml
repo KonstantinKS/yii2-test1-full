@@ -2,6 +2,7 @@ actor: Tester
 include:
     - vendor/konstantinks/yii2-module-test-first
     - vendor/demliz/render-api-wrapper
+    - vendor/demliz/document-identifier
 paths:
     tests: tests
     log: tests/_output

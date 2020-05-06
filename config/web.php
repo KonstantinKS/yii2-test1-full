@@ -1,5 +1,10 @@
 <?php
 
+use app\services\interfaces\MediaLibraryInterface;
+use app\services\interfaces\MediaLibraryThirdPartyInterface;
+use app\services\MediaLibraryAdapter;
+use app\services\MediaLibraryThirdParty;
+
 $params = array_merge(
     require(__DIR__ . '/params.php'),
     require(__DIR__ . '/params-local.php')
@@ -20,6 +25,11 @@ $config = [
     ],
     'modules' => [
         'insomnia' => 'app\insomnia\Module',
+    'container' => [
+        'definitions' => [
+            MediaLibraryThirdPartyInterface::class => MediaLibraryThirdParty::class,
+            MediaLibraryInterface::class => MediaLibraryAdapter::class,
+        ],
     ],
     'components' => [
         'request' => [

@@ -18,6 +18,9 @@ $config = [
         '@bower' => '@vendor/bower-asset',
         '@npm' => '@vendor/npm-asset',
     ],
+    'modules' => [
+        'insomnia' => 'app\insomnia\Module',
+    ],
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
@@ -55,6 +58,7 @@ $config = [
             'showScriptName' => false,
             'enableStrictParsing' => false,
             'rules' => [
+                '<module:insomnia>/000219_000011_RU_ГПНТБ_России_IBIS_0000650162/document/info' => '<module>/default/index',
             ],
         ],
     ],
